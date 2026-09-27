@@ -1,0 +1,23 @@
+==3624== Cachegrind, a high-precision tracing profiler
+==3624== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==3624== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==3624== Command: ./bin/matmul_bloco_O0 512 64
+==3624==
+--3624-- warning: L3 cache found, using its data for the LL simulation.
+[Matmul Blocado] N:   512 | Bloco B:   64 | Tempo: 11.3366 s | GFLOPS: 0.02 | checksum: 5.2264e+15
+==3624==
+==3624== I refs:        4,488,671,997
+==3624== I1  misses:            1,538
+==3624== LLi misses:            1,509
+==3624== I1  miss rate:          0.00%
+==3624== LLi miss rate:          0.00%
+==3624==
+==3624== D refs:        2,586,345,250  (2,446,834,714 rd   + 139,510,536 wr)
+==3624== D1  misses:       19,596,996  (   19,498,269 rd   +      98,727 wr)
+==3624== LLd misses:           99,747  (        1,073 rd   +      98,674 wr)
+==3624== D1  miss rate:           0.8% (          0.8%     +         0.1%  )
+==3624== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==3624==
+==3624== LL refs:          19,598,534  (   19,499,807 rd   +      98,727 wr)
+==3624== LL misses:           101,256  (        2,582 rd   +      98,674 wr)
+==3624== LL miss rate:            0.0% (          0.0%     +         0.1%  )

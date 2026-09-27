@@ -1,0 +1,23 @@
+==3621== Cachegrind, a high-precision tracing profiler
+==3621== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==3621== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==3621== Command: ./bin/matmul_padrao_O0 512
+==3621==
+--3621-- warning: L3 cache found, using its data for the LL simulation.
+[Matmul Padrao]  N:   512 | Tempo: 12.0623 s | GFLOPS: 0.02 | checksum: 5.2264e+15
+==3621==
+==3621== I refs:        3,512,368,117
+==3621== I1  misses:            1,529
+==3621== LLi misses:            1,501
+==3621== I1  miss rate:          0.00%
+==3621== LLi miss rate:          0.00%
+==3621==
+==3621== D refs:        2,025,381,616  (1,889,313,519 rd   + 136,068,097 wr)
+==3621== D1  misses:      134,941,903  (  134,581,031 rd   +     360,872 wr)
+==3621== LLd misses:           99,745  (        1,072 rd   +      98,673 wr)
+==3621== D1  miss rate:           6.7% (          7.1%     +         0.3%  )
+==3621== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==3621==
+==3621== LL refs:         134,943,432  (  134,582,560 rd   +     360,872 wr)
+==3621== LL misses:           101,246  (        2,573 rd   +      98,673 wr)
+==3621== LL miss rate:            0.0% (          0.0%     +         0.1%  )
